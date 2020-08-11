@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(Images/darkScratchesBG.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "mainTitleFont";
+    font-size: 2vw;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+@font-face {
+    font-family: "mainTitleFont";
+    src: url("../Resources/Fonts/PFDinTextCondPro-Regular.ttf") format('truetype');
+}
+
+
+/*Page Body */
+.main {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    
+}
+
+.main h1 {
+    text-align: center;
+}
+
+/* COLUMNS */
+
+.col1, .col2, .col3 {
+    flex-direction: column;
+    color: white;
+    border: solid white;
+    width: 33%;
+    height: 95vh; /* vh - viewport height - 50vh = 50% of viewport height. */
+    margin: 1%;
+    align-self: stretch;
+}
+
+.col1 {
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+/*CONTENT INSIDE COLUMNS*/
+
+.monsterList div {
+    border: solid white;
+    margin: 1%;
+}
+
+
+.display  {
+    display: none;
+} 
