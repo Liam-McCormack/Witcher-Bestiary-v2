@@ -13,46 +13,46 @@ document.getElementsByClassName("beastTitle").addEventListener("click", showhide
 
 
 //Toggle view of Monster columns - JQUERY
-$('.beastTitle').click(function(){
+$('.beastTitle header').click(function(){
     $('.beastContent').toggle('slow');
 });
 
-$('.cursedTitle').click(function(){
+$('.cursedTitle header').click(function(){
     $('.cursedContent').toggle('slow');
 }); 
 
-$('.dracoTitle').click(function(){
+$('.dracoTitle header').click(function(){
     $('.dracoContent').toggle('slow');
 }); 
 
-$('.eleTitle').click(function(){
+$('.eleTitle header').click(function(){
     $('.eleContent').toggle('slow');
 }); 
 
-$('.hybTitle').click(function(){
+$('.hybTitle header').click(function(){
     $('.hybContent').toggle('slow');
 }); 
 
-$('.insectTitle').click(function(){
+$('.insectTitle header').click(function(){
     $('.insectContent').toggle('slow');
 }); 
 
-$('.necroTitle').click(function(){
+$('.necroTitle header').click(function(){
     $('.necroContent').toggle('slow');
 }); 
 
-$('.ogroTitle').click(function(){
+$('.ogroTitle header').click(function(){
     $('.ogroContent').toggle('slow');
 }); 
 
-$('.relicTitle').click(function(){
+$('.relicTitle header').click(function(){
     $('.relicContent').toggle('slow');
 }); 
 
-$('.specTitle').click(function(){
+$('.specTitle header').click(function(){
     $('.specContent').toggle('slow');
 }); 
 
-$('.vampTitle').click(function(){
+$('.vampTitle header').click(function(){
     $('.vampContent').toggle('slow');
 }); 

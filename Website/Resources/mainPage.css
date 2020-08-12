@@ -25,7 +25,7 @@ html {
 /*Page Body */
 .main {
     width: 100%;
-    height: 100%;
+    height: 100vh; 
     display: inline-flex;
     
 }
@@ -46,19 +46,44 @@ html {
     align-self: stretch;
 }
 
-.col1 {
+/* SCROLL BAR */
+.col1 {   
     overflow-x: hidden; 
     overflow-y: auto;
-}
+} 
+
 
 /*CONTENT INSIDE COLUMNS*/
 
+/*
+.monsterList {
+    display: flex;
+    
+} */
+
+.col1 header {
+    padding-left: 1vw;
+}
+
 .monsterList div {
-    border: solid white;
+    border: solid white; 
     margin: 1%;
+    width: 95%;
 }
 
 
 .display  {
     display: none;
 } 
+
+
+.icon {
+    max-height: 3.5vw;
+    max-width: 3.5vw;
+    float: left; 
+    padding-right: 0.5vw;
+}  
+
+.beastContent {
+    overflow: hidden;
+}
