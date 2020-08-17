@@ -29,7 +29,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 94%;
+    height: 95vh;
     width: 100%; /* change to vh/vw? */
     position: absolute;
 }

@@ -35,8 +35,8 @@ html {
 }
 
 /* COLUMNS */
-
 .col1, .col2, .col3 {
+    display: flex;
     flex-direction: column;
     color: white;
     border: solid white;
@@ -46,6 +46,8 @@ html {
     align-self: stretch;
 }
 
+
+/* COLUMN ONE */
 /* SCROLL BAR */
 .col1 {   
     overflow-x: hidden; 
@@ -53,16 +55,12 @@ html {
 } 
 
 
-/*CONTENT INSIDE COLUMNS*/
+/*CONTENT INSIDE*/
 
-/*
-.monsterList {
-    display: flex;
-    
-} */
 
 .col1 header {
     padding-left: 1vw;
+    cursor: pointer;
 }
 
 .monsterList div {
@@ -84,6 +82,98 @@ html {
     padding-right: 0.5vw;
 }  
 
-.beastContent {
+.expan-logo {
+    max-height: 8vw;
+    max-width: 8vw;
+    float: right; 
+    padding-right: 0.5vw;
+    padding-top: 0.7vw;
+}
+
+.beastContent, .cursedContent {
+    overflow: hidden;
+    font-size: 1.5vw;
+}
+
+.beastContent p {
+    display: inline-block;
+}
+
+header p { /* ARROW HEAD POINTING */
+    float: right;
+    padding-right: 0.5vw;
+}
+
+/* COLUMN TWO */
+
+
+
+.image-container {
+    display: flex;
+    /* color: white;
+    border: solid white; */
+    height: 75vh;
+    width: 120%;
+    align-self: center;
+    justify-content: center;
+}
+
+#monster {
+    max-width: 100%;
+    height:auto; 
+    z-index: 1;
+}
+
+.items-container {
+    color: white;
+    border: solid white;
+    height: 12vh;
+    width: 75%;
+    align-self: center;
+    font-size: 1.5vw;
+    text-align: center;
     overflow: hidden;
 }
+
+#items img {
+    color: white;
+    border: solid white; 
+    display: inline-flex;
+    max-height: 8vw;
+    max-width: 8vw;
+    margin-top: 0.2vw;
+}
+
+
+/* COLUMN THREE */
+
+.col3 header, .info {
+    display: flex;
+    color: white;
+    border: solid white; 
+    width: 95%;
+    align-self: center;
+}
+
+.col3 header {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+#info {
+    height: 80vh;
+    display: block;
+    font-size: 1.2vw;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+.col3 p, .col3 i {
+    margin: 0.5vw;
+}
+
+br {
+    content: "";
+} 
+
+
