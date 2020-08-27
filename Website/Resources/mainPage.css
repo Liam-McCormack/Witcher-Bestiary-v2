@@ -34,6 +34,10 @@ html {
     text-align: center;
 }
 
+p {
+    cursor: default;
+}
+
 /* COLUMNS */
 .col1, .col2, .col3 {
     display: flex;
@@ -90,12 +94,13 @@ html {
     padding-top: 0.7vw;
 }
 
-.beastContent, .cursedContent {
+.beastContent, .cursedContent, .dracoContent, .eleContent, .hybContent, .insectContent, .necroContent, .ogroContent, .relicContent, .specContent, .vampContent {
     overflow: hidden;
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
-.beastContent p {
+.beastContent p, .cursedContent p, .dracoContent p, .eleContent p, .hybContent p, .insectContent p, .necroContent p, .ogroContent p, .relicContent p, .specContent p, .vampContent p {
     display: inline-block;
 }
 
