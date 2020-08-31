@@ -43,7 +43,7 @@ p {
     display: flex;
     flex-direction: column;
     color: white;
-    border: solid white;
+    border: solid;
     width: 33%;
     height: 95vh; /* vh - viewport height - 50vh = 50% of viewport height. */
     margin: 1%;
@@ -53,10 +53,40 @@ p {
 
 /* COLUMN ONE */
 /* SCROLL BAR */
-.col1 {   
+.col1 { 
+    /*  
     overflow-x: hidden; 
-    overflow-y: auto;
+    overflow-y: auto; */
+    border-image-source: url(./Images/brown1-fade.png);
+    border-image-slice: 1100;
+    border-image-width: 100;
+    padding-top: 0.2vh;
 } 
+
+
+
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+} 
+  
+/* Track */
+::-webkit-scrollbar-track {
+    width: 6px;
+    border: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(116, 84, 53);
+    border-radius: 6px;
+} 
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(70, 51, 32);
+} 
+
 
 
 /*CONTENT INSIDE*/
@@ -67,12 +97,29 @@ p {
     cursor: pointer;
 }
 
-.monsterList div {
-    border: solid white; 
-    margin: 1%;
-    width: 95%;
+.list-container {
+    border: transparent;
+    height: 100%;
+    margin: 3%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    padding: 0 0.2vw;
 }
 
+.monsterList div {
+    border: solid rgb(116, 84, 53); 
+    border-style: none;
+    background-color: rgba(8, 8, 8, 0.3);
+    margin: 0.2%;
+    
+}
+
+.beastTitle div, .cursedTitle div, .dracoTitle div, .eleTitle div, .hybTitle div, .insectTitle div, .necroTitle div, .ogroTitle div, .relicTitle div, .specTitle div, .vampTitle div {
+    background: -moz-linear-gradient(left,  rgba(116, 84, 53,0.65) 0%, rgba(0,0,0,0.65) 7%, rgba(0,0,0,0) 64%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(116, 84, 53,0.65) 0%,rgba(0,0,0,0.65) 7%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(116, 84, 53,0.65) 0%,rgba(0,0,0,0.65) 7%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-top: 0.1vw;
+}
 
 .display  {
     display: none;
@@ -102,6 +149,7 @@ p {
 
 .beastContent p, .cursedContent p, .dracoContent p, .eleContent p, .hybContent p, .insectContent p, .necroContent p, .ogroContent p, .relicContent p, .specContent p, .vampContent p {
     display: inline-block;
+    cursor: pointer;
 }
 
 header p { /* ARROW HEAD POINTING */
@@ -111,12 +159,12 @@ header p { /* ARROW HEAD POINTING */
 
 /* COLUMN TWO */
 
-
+.col2 {
+    border: none;
+}
 
 .image-container {
     display: flex;
-    /* color: white;
-    border: solid white; */
     height: 75vh;
     width: 120%;
     align-self: center;
@@ -130,27 +178,38 @@ header p { /* ARROW HEAD POINTING */
 }
 
 .items-container {
-    color: white;
-    border: solid white;
+    border: solid; 
     height: 12vh;
     width: 75%;
     align-self: center;
     font-size: 1.5vw;
     text-align: center;
     overflow: hidden;
+    border-image-source: url(./Images/brown1.png);
+    border-image-slice: 700;
+    border-image-width: 100;
 }
 
 #items img {
-    color: white;
-    border: solid white; 
+    border: solid; 
     display: inline-flex;
     max-height: 8vw;
     max-width: 8vw;
     margin-top: 0.2vw;
+    border-image-source: url(./Images/border-thin-brown.png);
+    border-image-slice: 400;
+    border-image-width: 100;
 }
 
 
 /* COLUMN THREE */
+
+.col3 {
+    border-image-source: url(./Images/brown1-fade.png);
+    border-image-slice: 1100;
+    border-image-width: 100;
+}
+
 
 .col3 header, .info {
     display: flex;
@@ -158,11 +217,14 @@ header p { /* ARROW HEAD POINTING */
     border: solid white; 
     width: 95%;
     align-self: center;
+    border-image-source: url(./Images/brown1.png);
+    border-image-slice: 300;
+    border-image-width: 100;
 }
 
 .col3 header {
     font-size: 1.5vw;
-    margin-top: 1vw;
+    margin-top: 8%;
 }
 
 #info {
@@ -171,10 +233,11 @@ header p { /* ARROW HEAD POINTING */
     font-size: 1.2vw;
     overflow-x: hidden; 
     overflow-y: auto;
+    padding-left: 1vw;
 }
 
 .col3 p, .col3 i {
-    margin: 0.5vw;
+    margin: 0.5vw 1vw;
 }
 
 br {

@@ -37,7 +37,7 @@ html {
 button {
     background-color: transparent; 
     border: solid;
-    border-color: rgb(137, 143, 143);
+    border-color: rgb(116, 84, 53);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(137, 143, 143);
+    background-color: rgb(116, 84, 53);
 }
 
 /* MEDIA QUERIES - MAYBE USE?
