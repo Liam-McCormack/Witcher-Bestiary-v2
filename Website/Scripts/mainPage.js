@@ -1,5 +1,15 @@
 
 
+//Tooltip for Items - JQUERY
+$(document).ready(function(){
+    $(document).tooltip({
+        classes: {
+            "ui-tooltip": "tooltip"
+        }
+    });
+});
+
+
 //Toggle view of Monster columns - JQUERY
 $('.beastTitle header').click(function(){
     $('.beastContent').toggle('slow');
@@ -85,6 +95,14 @@ $('.beastContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"});    
 })
 
 $('.cursedContent').click(function() {
@@ -93,6 +111,13 @@ $('.cursedContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.dracoContent').click(function() {
@@ -101,6 +126,13 @@ $('.dracoContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.eleContent').click(function() {
@@ -109,6 +141,13 @@ $('.eleContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.hybContent').click(function() {
@@ -117,6 +156,13 @@ $('.hybContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.insectContent').click(function() {
@@ -125,6 +171,13 @@ $('.insectContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.necroContent').click(function() {
@@ -133,6 +186,13 @@ $('.necroContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.ogroContent').click(function() {
@@ -141,6 +201,13 @@ $('.ogroContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.relicContent').click(function() {
@@ -149,6 +216,13 @@ $('.relicContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 $('.specContent').click(function() {
@@ -157,6 +231,14 @@ $('.specContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    //MEDIA QUERY CHANGES
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
+    
 })
 
 $('.vampContent').click(function() {
@@ -165,6 +247,12 @@ $('.vampContent').click(function() {
     document.getElementById('info-heading').innerHTML = getMonsterTitle(monsterName);
     document.getElementById('info').innerHTML = getMonsterInfo(monsterName);
     document.getElementById('items').innerHTML = getMonsterItem(monsterName);
+    $('html,body').animate({
+        scrollTop: $("#monster").offset().top},
+    'slow');
+    document.getElementById('col2').style.visibility = "visible";
+    document.getElementById('col3').style.visibility = "visible";
+    $("#main").css({"overflow": "visible"}); 
 })
 
 
@@ -177,13 +265,13 @@ let monsters = [
         "name": "Bears",
         "image": "Resources/Images/Monsters/Beasts/Bear.svg",
         "text": "<p>\r\n    Know that ditty about the bear \"climbing the mountain, to see what he could see?\" Biggest load of rubbish I've ever heard. When a bear climbs a mountain, it's not to see. It's to hunt. To kill. \r\n<\/p>\r\n<p>\r\n    \u2013 Jahne Oldak, royal huntsman\r\n<\/p>\r\n<br>\r\n<p>\r\n    Bears are omnivores \u2013 meaning men find a place in their diet beside berries, roots and salmon. When they snack on humans, they most frequently partake of the meat of travelers unwittingly trespassing on their territory, or else that of hunters for whom besting such a creature is a lifelong ambition. \r\n<\/p>\r\n<br>\r\n<p>\r\n    There are several subspecies of bears \u2013 black bears, polar bears and cave bears \u2013 which differ from one another in coloring as well as in size and strength. All share one trait in common, however: a near-unmatched ability to kill.\r\n<\/p>",
-        "items": "<img src=\"Resources\/Images\/Items\/Oils\/beast_oil.png\"> <img src=\"Resources\/Images\/Signs\/quen.png\">"
+        "items": "<img src=\"Resources\/Images\/Items\/Oils\/beast_oil.png\" title=\"Beast Oil - 10% Attack power versus Beasts\"> <img src=\"Resources\/Images\/Signs\/quen.png\" title=\"Quen - Forms a protective field to shield from attacks\">"
     },
     {
         "name": "Big Bad Wolf",
         "image": "Resources/Images/Monsters/Beasts/BigBadWolf.svg",
         "text": "<p>\r\n                        'You ask why I have these big hands, my friend? Well, I'll tell you my secret: exercise.' \r\n                    <\/p>\r\n                    <p>\r\n                        \u2014 Big Bad Wolf\r\n                    <\/p>\r\n                    <br>\r\n                    <p>\r\n                        The Big Bad Wolf who lived in the Land of a Thousand Fables was, like the other denizens of that strange sphere, created by Artorius Vigo based on a figure from folk tales. Once he served as a playmate to the duke's daughters, acting out scenes with a certain red-hooded girl and her grandmother, but as the fable land slowly degenerated, so did he.\r\n                    <\/p>\r\n                    <br>\r\n                    <p>\r\n                        Geralt and Syanna met the Big Bad Wolf while he was nursing a nasty hangover and was not eager to cooperate. Yet since our heroes needed a bean which the wolf had, they forced him to act out his tale.\r\n                    <\/p>\r\n                    <br>\r\n                    <p>\r\n                        That tale ended as it always had: the Big Bad Wolf attacked the Hunter (played by Geralt), biting and clawing him fiercely while his own wounds healed almost instantaneously. Inevitably, however, the Big Bad Wolf was killed and his stomach cut open.\r\n                    <\/p>\r\n                    <br>\r\n                    <p>\r\n                        This time, out came not a grandma and her granddaughter, but a magic bean.\r\n                    <\/p>",
-        "items": "<img src=\"Resources\/Images\/Items\/Bombs\/devils_puffball_bomb.png\"> <img src=\"Resources\/Images\/Items\/Oils\/beast_oil.png\">"
+        "items": "<img src=\"Resources\/Images\/Items\/Bombs\/devils_puffball_bomb.png\" title=\"Devil's Puffball - Releases a cloud of poison when detonated.\"> <img src=\"Resources\/Images\/Items\/Oils\/beast_oil.png\" title=\"Beast Oil - 10% Attack power versus Beasts\">"
     },
     {
         "name": "Dogs",

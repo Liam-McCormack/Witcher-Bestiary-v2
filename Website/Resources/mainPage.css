@@ -23,14 +23,14 @@ html {
 
 
 /*Page Body */
-.main {
+#main {
     width: 100%;
     height: 100vh; 
     display: inline-flex;
     
 }
 
-.main h1 {
+#main h1 {
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ p {
 }
 
 /* COLUMNS */
-.col1, .col2, .col3 {
+#col1, #col2, #col3 {
     display: flex;
     flex-direction: column;
     color: white;
@@ -47,13 +47,13 @@ p {
     width: 33%;
     height: 95vh; /* vh - viewport height - 50vh = 50% of viewport height. */
     margin: 1%;
-    align-self: stretch;
+    /* align-self: stretch; */
 }
 
 
 /* COLUMN ONE */
 /* SCROLL BAR */
-.col1 { 
+#col1 { 
     /*  
     overflow-x: hidden; 
     overflow-y: auto; */
@@ -92,9 +92,10 @@ p {
 /*CONTENT INSIDE*/
 
 
-.col1 header {
+#col1 header {
     padding-left: 1vw;
     cursor: pointer;
+    font-size: 1em;
 }
 
 .list-container {
@@ -127,15 +128,15 @@ p {
 
 
 .icon {
-    max-height: 3.5vw;
-    max-width: 3.5vw;
+    height: 3.5vw;
+    width: 3.5vw;
     float: left; 
     padding-right: 0.5vw;
 }  
 
 .expan-logo {
     max-height: 8vw;
-    max-width: 8vw;
+    max-width: 8vw; 
     float: right; 
     padding-right: 0.5vw;
     padding-top: 0.7vw;
@@ -159,7 +160,7 @@ header p { /* ARROW HEAD POINTING */
 
 /* COLUMN TWO */
 
-.col2 {
+#col2 {
     border: none;
 }
 
@@ -179,7 +180,7 @@ header p { /* ARROW HEAD POINTING */
 
 .items-container {
     border: solid; 
-    height: 12vh;
+    height: auto;
     width: 75%;
     align-self: center;
     font-size: 1.5vw;
@@ -193,25 +194,26 @@ header p { /* ARROW HEAD POINTING */
 #items img {
     border: solid; 
     display: inline-flex;
-    max-height: 8vw;
-    max-width: 8vw;
-    margin-top: 0.2vw;
-    border-image-source: url(./Images/border-thin-brown.png);
-    border-image-slice: 400;
-    border-image-width: 100;
+    /*max-height: 8vw;
+    max-width: 8vw; */
+    width: 3.4vw;
+    height: auto;
+    margin: 0.2vw, 0;
+    border: 0.01em solid rgb(116, 84, 53); 
+    cursor: pointer;
 }
 
 
 /* COLUMN THREE */
 
-.col3 {
+#col3 {
     border-image-source: url(./Images/brown1-fade.png);
     border-image-slice: 1100;
     border-image-width: 100;
 }
 
 
-.col3 header, .info {
+#col3 header, .info {
     display: flex;
     color: white;
     border: solid white; 
@@ -222,7 +224,7 @@ header p { /* ARROW HEAD POINTING */
     border-image-width: 100;
 }
 
-.col3 header {
+#col3 header {
     font-size: 1.5vw;
     margin-top: 8%;
 }
@@ -236,7 +238,7 @@ header p { /* ARROW HEAD POINTING */
     padding-left: 1vw;
 }
 
-.col3 p, .col3 i {
+#col3 p, #col3 i {
     margin: 0.5vw 1vw;
 }
 
@@ -244,4 +246,200 @@ br {
     content: "";
 } 
 
+.tooltip {
+    background-color: rgba(68, 63, 63, 0.3) !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.1vw !important;
+    font-family: "mainTitleFont" !important;
+    border: solid rgba(70, 51, 32, 0.5) !important;
+    border-radius: 0.4vw !important;
+}
 
+
+
+
+
+/* ------MEDIA QUERIES------ */
+
+/* Small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) and (orientation: portrait) { 
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        overflow: hidden;
+    }
+
+    #col1, #col2, #col3 {
+       width: 97vw;
+       margin: 1%;
+    }
+
+    #col2, #col3 {
+        visibility: hidden;
+    }
+
+    /* COLUMN ONE */
+
+    #col1 {
+        font-size: 3em;
+        height: 100vh;
+    }
+
+    .monsterList div {
+        font-size: 1em;
+    }
+
+    .icon {
+        height: 2em;
+        width: 2em;
+    }  
+    
+    .expan-logo {
+        max-height: 4.5vh;
+        max-width: 22vw;
+    }
+
+    /* COLUMN TWO */
+
+    .image-container {
+        height: 40vh;
+        width: 60%;
+    }
+
+    .items-container {
+        height: 8vh;
+        width: 75%;
+    }
+
+    .items-container p {
+        font-size: 2em;
+    }
+    
+    #items img {
+        /*max-height: 8vw;
+        max-width: 8vw; */
+        width: 8.9vw;
+        height: 5vh;
+    }
+
+    
+
+    /* COLUMN THREE */
+    
+    #col3 {
+        height: 47vh;
+        border-image-slice: 750;
+        border-image-width: 100;
+        margin: 1em, auto;
+    }
+
+    #info-heading {
+        font-size: 4em;
+    }
+
+    #info {
+        width: 100%;
+        overflow-x: hidden; 
+        overflow-y: auto;
+        font-size: 2em;
+    }
+
+    #info p {
+        padding: 0.5vh;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (orientation: portrait) { 
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        overflow: hidden;
+    }
+
+    #col1, #col2, #col3 {
+       width: 97vw;
+       margin: 1%;
+    }
+
+    #col2, #col3 {
+        visibility: hidden;
+    }
+
+    /* COLUMN ONE */
+
+    #col1 {
+        font-size: 3em;
+        height: 100vh;
+    }
+
+    .monsterList div {
+        font-size: 1em;
+    }
+
+    .icon {
+        height: 2em;
+        width: 2em;
+    }  
+    
+    .expan-logo {
+        max-height: 4.5vh;
+        max-width: 22vw;
+    }
+
+    /* COLUMN TWO */
+
+    .image-container {
+        height: 40vh;
+        width: 60%;
+    }
+
+    .items-container {
+        height: 10vh;
+        width: 75%;
+    }
+
+    .items-container p {
+        font-size: 2em;
+    }
+    
+    #items img {
+        /*max-height: 8vw;
+        max-width: 8vw; */
+        width: 8vw;
+        height: 6vh;
+    }
+
+    
+
+    /* COLUMN THREE */
+    
+    #col3 {
+        height: 47vh;
+        border-image-slice: 750;
+        border-image-width: 100;
+    }
+
+    #info-heading {
+        font-size: 4em;
+    }
+
+    #info {
+        width: 100%;
+        overflow-x: hidden; 
+        overflow-y: auto;
+        font-size: 2em;
+    }
+
+    #info p {
+        padding: 0.5vh;
+    }
+}
+
+/* Large devices (desktops, 992px and up) 
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) 
+@media (min-width: 1200px) { ... } */
