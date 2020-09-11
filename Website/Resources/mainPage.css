@@ -247,12 +247,13 @@ br {
 } 
 
 .tooltip {
-    background-color: rgba(68, 63, 63, 0.3) !important;
+    background-color: rgba(68, 63, 63, 0.9) !important;
     color: rgb(255, 255, 255) !important;
-    font-size: 1.1vw !important;
+    font-size: 0.6em !important;
     font-family: "mainTitleFont" !important;
     border: solid rgba(70, 51, 32, 0.5) !important;
     border-radius: 0.4vw !important;
+    padding: 1em !important;
 }
 
 
@@ -271,7 +272,7 @@ br {
     }
 
     #col1, #col2, #col3 {
-       width: 97vw;
+       width: 96vw;
        margin: 1%;
     }
 
@@ -319,8 +320,14 @@ br {
     #items img {
         /*max-height: 8vw;
         max-width: 8vw; */
-        width: 8.9vw;
-        height: 5vh;
+        width: 11vw;
+        height: 5.5vh;
+    }
+
+    .tooltip {
+        background-color: rgba(68, 63, 63, 0.8) !important;
+        font-size: 2em !important;
+        padding: 0.5em !important;
     }
 
     
@@ -410,6 +417,13 @@ br {
         max-width: 8vw; */
         width: 8vw;
         height: 6vh;
+    }
+
+    .tooltip {
+        background-color: rgba(68, 63, 63, 0.8) !important;
+        font-size: 2em !important;
+        padding: 0.2em !important;
+        width: 70vw !important;
     }
 
     
