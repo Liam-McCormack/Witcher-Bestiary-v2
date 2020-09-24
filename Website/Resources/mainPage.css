@@ -45,18 +45,14 @@ p {
     color: white;
     border: solid;
     width: 33%;
-    height: 95vh; /* vh - viewport height - 50vh = 50% of viewport height. */
+    height: 95vh;
     margin: 1%;
-    /* align-self: stretch; */
 }
 
 
 /* COLUMN ONE */
 /* SCROLL BAR */
 #col1 { 
-    /*  
-    overflow-x: hidden; 
-    overflow-y: auto; */
     border-image-source: url(./Images/brown1-fade.png);
     border-image-slice: 1100;
     border-image-width: 100;
@@ -70,19 +66,19 @@ p {
     width: 0.5vw;
 } 
   
-/* Track */
+
 ::-webkit-scrollbar-track {
     width: 6px;
     border: none;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: rgb(116, 84, 53);
     border-radius: 6px;
 } 
   
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(70, 51, 32);
 } 
@@ -194,8 +190,6 @@ header p { /* ARROW HEAD POINTING */
 #items img {
     border: solid; 
     display: inline-flex;
-    /*max-height: 8vw;
-    max-width: 8vw; */
     width: 3.4vw;
     height: auto;
     margin: 0.2vw, 0;
@@ -318,8 +312,6 @@ br {
     }
     
     #items img {
-        /*max-height: 8vw;
-        max-width: 8vw; */
         width: 11vw;
         height: 5.5vh;
     }
@@ -413,8 +405,6 @@ br {
     }
     
     #items img {
-        /*max-height: 8vw;
-        max-width: 8vw; */
         width: 8vw;
         height: 6vh;
     }
@@ -451,9 +441,3 @@ br {
         padding: 0.5vh;
     }
 }
-
-/* Large devices (desktops, 992px and up) 
-@media (min-width: 992px) { ... }
-
-/* Extra large devices (large desktops, 1200px and up) 
-@media (min-width: 1200px) { ... } */
