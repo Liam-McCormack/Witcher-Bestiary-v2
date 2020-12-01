@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--boilerplate-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Witcher Bestiary</title>
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="Resources/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Resources/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Resources/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Resources/Favicon/site.webmanifest">
+        <link rel="mask-icon" href="Resources/Favicon/safari-pinned-tab.svg" color="#7f0808">
+        <meta name="msapplication-TileColor" content="#b91d47">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--CSS-->
+        <link href="Resources/bestiary.css" rel="stylesheet">
+        <link href="jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+    
+    </head>
+    <body>
+        <div id="main">
+            <div id="col1">
+                <div class="list-container">
+                    <div class="monsterList">
+                        <div class="beastTitle">
+                            <header>BEASTS <p>▼</p></header>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/bear_icon.png"/>
+                                <p>Bears</p>
+                            </div>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/bigbadwolf_icon.png"/>
+                                <p>Big Bad Wolf</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/dog_icon.png"/>
+                                <p>Dogs</p>
+                            </div>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/panther_icon.png"/>
+                                <p>Panthers</p>
+                            </div>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/beastofbeauclair_icon.png"/>
+                                <p>The Beast of Beauclair</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/threelittlepigs_icon.png"/>
+                                <p>Three Little Pigs</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/wildboar_icon.png"/>
+                                <p>Wild Boars</p>
+                                <img src="Resources/Images/Logos/HeartsOfStoneLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="beastContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Beasts/wolf_icon.png"/>
+                                <p>Wolves</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="cursedTitle">
+                            <header>CURSED ONES <p>▼</p></header>
+                            <div class="cursedContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Cursed Ones/archespore1_icon.png"/>
+                                <p>Archespore</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="cursedContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Cursed Ones/berserker_icon.png"/>
+                                <p>Berserkers</p> 
+                            </div>
+                            <div class="cursedContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Cursed Ones/botchling_icon.png"/>
+                                <p>Botchlings</p> 
+                            </div>
+                            <div class="cursedContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Cursed Ones/thetoadprince_icon.png"/>
+                                <p>The Toad Prince</p>
+                                <img src="Resources/Images/Logos/HeartsOfStoneLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="cursedContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Cursed Ones/ulfhedinn_icon.png"/>
+                                <p>Ulfhedinn</p>
+                            </div>
+                            <div class="cursedContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Cursed Ones/werewolf_icon.png"/>
+                                <p>Werewolves</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="dracoTitle">
+                            <header>DRACONIDS <p>▼</p></header>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/basilisk_icon.png"/>
+                                <p>Basilisks</p>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/cockatrice_icon.png"/>
+                                <p>Cockatrices</p>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/forktail_icon.png"/>
+                                <p>Forktails</p>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/royal_wyvern_icon.png"/>
+                                <p>Royal Wyverns</p>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/shrieker_icon.png"/>
+                                <p>Shriekers</p>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/silver_basilisk_icon.png"/>
+                                <p>Silver Basilisks</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/slyzard_icon.png"/>
+                                <p>Slyzards</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/slyzard_matriarch_icon.png"/>
+                                <p>Slyzard Matriarchs</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/thefyresdaldragon_icon.png"/>
+                                <p>The Dragon of Fyresdal</p>
+                            </div>
+                            <div class="dracoContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Draconids/wyvern_icon.png"/>
+                                <p>Wyverns</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="eleTitle">
+                            <header>ELEMENTA <p>▼</p></header>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/djinn_icon.png"/>
+                                <p>Djinn</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/earth_elemental_icon.png"/>
+                                <p>Earth Elemental</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/fire_elemental_icon.png"/>
+                                <p>Fire Elemental</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/gargoyle_icon.png"/>
+                                <p>Gargoyle</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/golem_icon.png"/>
+                                <p>Golem</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/hound_hunt_icon.png"/>
+                                <p>Hound of the Wild Hunt</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/ice_elemental_icon.png"/>
+                                <p>Ice Elemental</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/moreaus_golem_icon.png"/>
+                                <p>Moreau's Golem</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/the_apiarian_phantom_icon.png"/>
+                                <p>The Apiarian Phantom</p>
+                            </div>
+                            <div class="eleContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Elementa/therazane_icon.png"/>
+                                <p>Therazane</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="hybTitle">
+                            <header>HYBRIDS <p>▼</p></header>
+                            <div class="hybContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Hybrids/griffin_icon.png"/>
+                                <p>Griffin</p>
+                            </div>
+                            <div class="hybContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Hybrids/harpy_icon.png"/>
+                                <p>Harpy</p>
+                            </div>
+                            <div class="hybContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Hybrids/melusine_icon.png"/>
+                                <p>Melusine</p>
+                            </div>
+                            <div class="hybContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Hybrids/opinicus_icon.png"/>
+                                <p>Opinicus</p>
+                            </div>
+                            <div class="hybContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Hybrids/salma_icon.png"/>
+                                <p>Salma</p>
+                            </div>
+                            <div class="hybContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Hybrids/siren_icon.png"/>
+                                <p>Siren</p>
+                            </div>
+                            <div class="hybContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Hybrids/succubus_icon.png"/>
+                                <p>Succubus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="insectTitle">
+                            <header>INSECTOIDS <p>▼</p></header>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/arachasae_icon.png"/>
+                                <p>Arachasae</p>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/arachnomorph_icon.png"/>
+                                <p>Arachnomorphs</p>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/armored_arachasae_icon.png"/>
+                                <p>Armored Arachasae</p>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/endrega_drone_icon.png"/>
+                                <p>Endrega Drones</p>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/endrega_warrior_icon.png"/>
+                                <p>Endrega Warriors</p>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/endrega_worker_icon.png"/>
+                                <p>Endrega Workers</p>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/giant_centipede_icon.png"/>
+                                <p>Giant Centipedes</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/harrisi_icon.png"/>
+                                <p>Harrisi</p>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/kikimore_warrior_icon.png"/>
+                                <p>Kikimore Warriors</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/kikimore_worker_icon.png"/>
+                                <p>Kikimore Workers</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/pale_widow_icon.png"/>
+                                <p>Pale Widows</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="insectContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Insectoids/venomous_arachasae_icon.png"/>
+                                <p>Venomous Arachasae</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="necroTitle">
+                            <header>NECROPHAGES <p>▼</p></header>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/abaya_icon.png"/>
+                                <p>Abaya</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/alghoul_icon.png"/>
+                                <p>Alghoul</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/drowner_icon.png"/>
+                                <p>Drowner</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/foglet_icon.png"/>
+                                <p>Foglet</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/ghoul_icon.png"/>
+                                <p>Ghoul</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/grave_hag_icon.png"/>
+                                <p>Grave Hag</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/ignis_fatuus_icon.png"/>
+                                <p>Ignis Fatuus</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/mourntart_icon.png"/>
+                                <p>Mourntart</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/rotfiend_icon.png"/>
+                                <p>Rotfiend</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/scurver_icon.png"/>
+                                <p>Scurver</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/spotted_wight_icon.png"/>
+                                <p>Spotted Wight</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/water_hag_icon.png"/>
+                                <p>Water Hag</p>
+                            </div>
+                            <div class="necroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Necrophages/wight_icon.png"/>
+                                <p>Wight</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="ogroTitle">
+                            <header>OGROIDS <p>▼</p></header>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/cloud_giant_icon.png"/>
+                                <p>Cloud Giant</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/cyclops_icon.png"/>
+                                <p>Cyclopses</p>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/golyat_icon.png"/>
+                                <p>Golyat</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/hagubman_icon.png"/>
+                                <p>Hagubman</p>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/ice_giant_icon.png"/>
+                                <p>Ice Giant</p>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/ice_troll_icon.png"/>
+                                <p>Ice Troll</p>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/nekker_icon.png"/>
+                                <p>Nekkers</p>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/rock_troll_icon.png"/>
+                                <p>Rock Troll</p>
+                            </div>
+                            <div class="ogroContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Ogroids/wham_icon.png"/>
+                                <p>Wham-a-Wham</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="relicTitle">
+                            <header>RELICTS <p>▼</p></header>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/chort_icon.png"/>
+                                <p>Chorts</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/crones_icon.png"/>
+                                <p>Crones</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/doppler_icon.png"/>
+                                <p>Doppler</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/fiend_icon.png"/>
+                                <p>Fiends</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/fugas_icon.png"/>
+                                <p>Fugas</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/godling_icon.png"/>
+                                <p>Godling</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/grottore_icon.png"/>
+                                <p>Grottore</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/howler_icon.png"/>
+                                <p>Howler</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/imp_icon.png"/>
+                                <p>Imp</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/kernun_icon.png"/>
+                                <p>Kernun</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/leshen_icon.png"/>
+                                <p>Leshen</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/morvudd_icon.png"/>
+                                <p>Morvudd</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/shaelmaar_icon.png"/>
+                                <p>Shaelmaar</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/shael_nilf_icon.png"/>
+                                <p>Shaelmaar from the Emperor of Nilfgaard</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/spriggan_icon.png"/>
+                                <p>Spriggans</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/sylvan_icon.png"/>
+                                <p>Sylvans</p>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/caretaker_icon.png"/>
+                                <p>The Caretaker</p>
+                                <img src="Resources/Images/Logos/HeartsOfStoneLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/tufo_mon_icon.png"/>
+                                <p>The Monster of Tufo</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/wicked_witch_icon.png"/>
+                                <p>Wicked Witch</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="relicContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Relicts/woodland_spirit_icon.png"/>
+                                <p>Woodland Spirit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="specTitle">
+                            <header>SPECTERS <p>▼</p></header>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/barghest_icon.png"/>
+                                <p>Barghest</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/banshee_icon.png"/>
+                                <p>Banshee</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/daphnes_wraith_icon.png"/>
+                                <p>Daphne's Wraith</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/devil_well_icon.png"/>
+                                <p>Devil by the Well</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/ethereal_icon.png"/>
+                                <p>Ethereal</p>
+                                <img src="Resources/Images/Logos/HeartsOfStoneLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/hym_icon.png"/>
+                                <p>Hym</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/jenny_icon.png"/>
+                                <p>Jenny o' the Woods</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/longlocks_icon.png"/>
+                                <p>Longlocks</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/nightwraith_icon.png"/>
+                                <p>Nightwraith</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/noonwraith_icon.png"/>
+                                <p>Noonwraith</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/penitent_icon.png"/>
+                                <p>Penitent</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/plague_maiden_icon.png"/>
+                                <p>Plague Maiden</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/umbra_icon.png"/>
+                                <p>Umbra</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/the_white_lady_icon.png"/>
+                                <p>The White Lady</p>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/wraith_painting_icon.png"/>
+                                <p>The Wraith from the Painting</p>
+                                <img src="Resources/Images/Logos/HeartsOfStoneLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="specContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Specters/wraith_icon.png"/>
+                                <p>Wraith</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monsterList">
+                        <div class="vampTitle">
+                            <header>VAMPIRES <p>▼</p></header>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/alpha_garkain_icon.png"/>
+                                <p>Alpha Garkain</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/alp_icon.png"/>
+                                <p>Alp</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/bruxa_icon.png"/>
+                                <p>Bruxa</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/dettlaff_icon.png"/>
+                                <p>Dettlaff van der Eretein</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/ekimmara_icon.png"/>
+                                <p>Ekimmara</p>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/fleder_icon.png"/>
+                                <p>Fleder</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/gael_icon.png"/>
+                                <p>Gael</p>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/garkain_icon.png"/>
+                                <p>Garkain</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/higher_vampire_icon.png"/>
+                                <p>Higher Vampire</p>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/katakan_icon.png"/>
+                                <p>Katakan</p>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/protofleder_icon.png"/>
+                                <p>Protofleder</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/sarasti_icon.png"/>
+                                <p>Sarasti</p>
+                            </div>
+                            <div class="vampContent display">
+                                <img class="icon" src="Resources/Images/Monsters/Icons/Vampires/bruxa_corvo_icon.png"/>
+                                <p>The Bruxa of Corvo Bianco</p>
+                                <img src="Resources/Images/Logos/BloodAndWineLogo.png" class="expan-logo"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div id="col2">
+                <div class="image-container">
+                    <img src="" id="monster" alt=""/>
+                </div>
+                <div class="items-container">
+                    <p>VULNERABLE AGAINST:</p>
+                    <div id="items">
+
+                    </div>
+                </div>
+            </div>
+            <div id="col3">
+                <header>
+                    <p id="info-heading"><p>
+                </header>
+                <div id="info">
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        
+
+        <!--Scripts-->
+        <script src="Scripts/jquery-3.5.1.js"></script>
+        <script src="Scripts/bestiary.js"></script>
+
+        <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    </body>
+</html>
